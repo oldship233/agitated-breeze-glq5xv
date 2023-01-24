@@ -1,0 +1,239 @@
+@keyframes zeroPriceAnim {
+  0% {
+    margin-right: 0rem;
+    font-size: 0;
+    color: #fe6d00;
+    transform: scale(1);
+  }
+
+  50% {
+    margin-right: 0rem;
+    font-size: 0;
+    color: #fe6d00;
+    transform: scale(1);
+  }
+
+  55% {
+    margin-right: 0.04rem;
+    font-size: 0.24rem;
+    color: #fe6d00;
+    transform: scale(1);
+  }
+
+  65% {
+    margin-right: 0.04rem;
+    font-size: 0.24rem;
+    color: #fe6d00;
+    transform: scale(1);
+  }
+
+  75% {
+    margin-right: 0.04rem;
+    font-size: 0.24rem;
+    color: #fe6d00;
+    transform: scale(1.2);
+  }
+
+  85% {
+    margin-right: 0.04rem;
+    font-size: 0.24rem;
+    color: #fe6d00;
+    transform: scale(1);
+  }
+
+  100% {
+    margin-right: 0.04rem;
+    font-size: 0.24rem;
+    color: #fe6d00;
+    transform: scale(1);
+  }
+}
+
+.zeroPrice {
+  margin-right: 0.04rem;
+  position: relative;
+  font-family: TemuMarket-Bold;
+  font-size: 0.24rem;
+  color: #fe6d00;
+  line-height: 1;
+
+  animation: zeroPriceAnim 6s linear both;
+}
+
+@keyframes showPriceAnim {
+  0% {
+    margin-right: 0rem;
+    font-size: 0rem;
+    color: #333333;
+  }
+
+  25% {
+    margin-right: 0rem;
+    font-size: 0rem;
+    color: #333333;
+  }
+
+  30% {
+    margin-right: 0.04rem;
+    font-size: 0.22rem;
+    color: #333333;
+  }
+
+  50% {
+    margin-right: 0.04rem;
+    font-size: 0.22rem;
+    color: #333333;
+  }
+
+  55% {
+    margin-right: 0.04rem;
+    font-size: 0.13rem;
+    color: #bababa;
+  }
+
+  100% {
+    margin-right: 0.04rem;
+    font-size: 0.13rem;
+    color: #bababa;
+  }
+}
+
+.showPrice {
+  margin-right: 0.04rem;
+  margin-bottom: 0.02rem;
+  position: relative;
+  font-family: TemuMarket-Bold;
+  font-size: 0.22rem;
+  color: #333333;
+  line-height: 1;
+  transform: perspective(1px);
+
+  animation: showPriceAnim 6s linear both;
+}
+
+.showPriceLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0%;
+  height: 0.015rem;
+  background-color: #bababa;
+  animation: showPriceLineAnim 6s linear both;
+}
+
+@keyframes showPriceLineAnim {
+  0% {
+    width: 0%;
+    background-color: #333333;
+  }
+
+  40% {
+    width: 0%;
+    background-color: #333333;
+  }
+
+  47% {
+    width: 100%;
+    background-color: #333333;
+  }
+
+  50% {
+    width: 100%;
+    background-color: #333333;
+  }
+
+  55% {
+    width: 100%;
+    background-color: #bababa;
+  }
+
+  100% {
+    width: 100%;
+    background-color: #bababa;
+  }
+}
+
+.marketPrice {
+  margin-bottom: 0.04rem;
+  position: relative;
+  font-family: TemuMarket-Bold;
+  font-size: 0.22rem;
+  color: #333333;
+  line-height: 1;
+  transform: perspective(1px);
+
+  animation: marketPriceAnim 6s linear both;
+}
+
+@keyframes marketPriceAnim {
+  0% {
+    font-size: 0.22rem;
+    color: #333333;
+    opacity: 1;
+  }
+
+  25% {
+    font-size: 0.22rem;
+    color: #333333;
+    opacity: 1;
+  }
+
+  30% {
+    font-size: 0.13rem;
+    color: #bababa;
+    opacity: 1;
+  }
+
+  40% {
+    font-size: 0.13rem;
+    color: #bababa;
+    opacity: 1;
+  }
+
+  50% {
+    font-size: 0.13rem;
+    color: #bababa;
+    opacity: 0;
+  }
+
+  100% {
+    font-size: 0.13rem;
+    color: #bababa;
+    opacity: 0;
+  }
+}
+
+.push-container {
+  margin-top: 50px;
+  width: 300px;
+  height: 30px;
+  /* line-height: 30px; */
+  display: flex;
+  align-items: flex-end;
+  background-color: #333333;
+}
+
+.push-container2 {
+  margin-top: 50px;
+  width: 300px;
+  height: 30px;
+  background-color: gray;
+  /* line-height: 30px; */
+}
+
+.line1 {
+  display: none;
+  background: red;
+  animation: zeroPriceAnim 6s linear both;
+}
+
+.line2 {
+  background: green;
+  animation: showPriceAnim 6s linear both;
+}
+
+.line3 {
+  background: yellow;
+  animation: marketPriceAnim 6s linear both;
+}
